@@ -24,4 +24,12 @@ export async function partialUpdateBooking(request, bookingId, token, bookingDat
     },
     data: bookingData,
   });
+};
+
+export async function deleteBooking(request, bookingId, token) {
+  return await request.delete(`/booking/${bookingId}`, {
+    headers: {
+      Cookie: `token=${token}`,
+    },
+  });
 }

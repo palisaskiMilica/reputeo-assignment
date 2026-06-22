@@ -33,3 +33,15 @@ export const bookingWithNoDeposit = () => ({
   },
   additionalneeds: "SPA",
 });
+
+export const bookingWithNegativePrice = () => ({
+  firstname: "Milica",
+  lastname: "Palisaski",
+  totalprice: -100,
+  depositpaid: true,
+  bookingdates: {
+    checkin: "2026-08-01",
+    checkout: "2026-08-05",
+  },
+  additionalneeds: "SPA",
+});

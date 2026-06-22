@@ -2,7 +2,8 @@ import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
-  fullyParallel: true,
+  fullyParallel: false,
+  workers: 1,
   reporter: [["html"], ["list"]],
   use: {
     baseURL: "https://restful-booker.herokuapp.com",
